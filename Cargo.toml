@@ -1,0 +1,10 @@
+[package]
+name = "rustpoly"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "poly_api"
+
+[dependencies]
+toml = "0.8.10"
