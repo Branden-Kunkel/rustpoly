@@ -1,6 +1,6 @@
 [static]
-api_key = ""
 file_no = 0
+
 
 [preferences]
 verbose = true
