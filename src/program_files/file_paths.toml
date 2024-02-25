@@ -1,7 +1,0 @@
-[program_files]
-settings = "/home/brandenk/Documents/programming/rust/rustpoly/src/program_files/settings.toml"
-keys = "/home/brandenk/Documents/programming/rust/rustpoly/src/program_files/keys.toml"
-
-[api_files]
-request_parameters = ""
-export_directory = ""
