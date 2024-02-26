@@ -10,16 +10,17 @@ pub mod parameter_handles{
     use std::fs::{read_to_string, File};
     use std::io::{BufRead, BufReader, Read};
     use std::ops::Index;
-    use std::path::{self, Path};
+    use std::path::{Path, PathBuf};
+    use std::str::FromStr;
     use std::vec;
     use toml::{Table, Value};
     use toml::map::Map;
 
 
-    pub fn create_toml_table(file_path: &str) -> Table{
+    pub fn create_toml_table(file_path: PathBuf) -> Table{
  
 
-        let toml_file_path = Path::new(&file_path);
+        let toml_file_path = file_path.as_path();
         let mut toml_str_buffer = String::new();
 
         let mut toml_file: File = match File::open(&toml_file_path) {
@@ -49,21 +50,24 @@ pub mod parameter_handles{
         }
 
 
-    pub fn get_file_paths(paths_table: Table) { 
+    pub fn get_file_paths(paths_table: Table, search_header: &str, key: &str) { 
+
+        let hdr: String = String::from_str(search_header).expect("Could derive String from &str");
+        let k: String = String::from_str(key).expect("Could not derive String from &str");
 
         for header in paths_table.keys(){
 
-                let header_str: &str = "program_files";
-
-                if header == header_str {
+                if header == search_header {
 
                     println!("{}", header);
+                    println!("{:?}", paths_table[&hdr][&k]);
+
+                    }
 
                 }
                 
             }
 
         }
-    }
 
         

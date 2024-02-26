@@ -1,0 +1,13 @@
+/home/branden/Documents/programming/rust/rustpoly/rustpoly/target/debug/deps/libtoml-7d5c4e26f8525c7d.rmeta: /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/lib.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/map.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/value.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/de.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/ser.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/macros.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/edit.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/fmt.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/table.rs
+
+/home/branden/Documents/programming/rust/rustpoly/rustpoly/target/debug/deps/toml-7d5c4e26f8525c7d.d: /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/lib.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/map.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/value.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/de.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/ser.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/macros.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/edit.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/fmt.rs /home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/table.rs
+
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/lib.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/map.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/value.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/de.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/ser.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/macros.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/edit.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/fmt.rs:
+/home/branden/.cargo/registry/src/index.crates.io-6f17d22bba15001f/toml-0.8.10/src/table.rs:
