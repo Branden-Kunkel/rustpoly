@@ -5,12 +5,13 @@
 
 pub mod parameter_handles{
 
-    use std::any::Any;
+    use std::borrow::Borrow;
+    use std::collections::{HashMap, HashSet};
     use std::fmt::{Debug, Display};
     use std::fs::{read_to_string, File};
     use std::io::{BufRead, BufReader, Read};
     use std::ops::Index;
-    use std::path::{Path, PathBuf};
+    use std::path::{self, Path, PathBuf};
     use std::str::FromStr;
     use std::vec;
     use toml::{Table, Value};
@@ -50,24 +51,40 @@ pub mod parameter_handles{
         }
 
 
-    pub fn get_file_paths(paths_table: Table, search_header: &str, key: &str) { 
+    pub fn get_file_paths(paths_table: Table, header: &str, key: &str) { 
 
-        let hdr: String = String::from_str(search_header).expect("Could derive String from &str");
-        let k: String = String::from_str(key).expect("Could not derive String from &str");
 
-        for header in paths_table.keys(){
+        for header_entry in paths_table.values(){
 
-                if header == search_header {
+            let is_val_there: bool = paths_table[header].eq(header_entry); //panics when key is not in index -> need a work around
 
-                    println!("{}", header);
-                    println!("{:?}", paths_table[&hdr][&k]);
+            if is_val_there {
+                
+                let keys_table = match Table::try_from(header_entry) {
+                    
+                    Err(why) => panic!("No: {}", why),
+                    Ok(table) => table,
 
-                    }
+                };
+                
+                for path_key in keys_table.values() {
+
+                    let is_key_there: bool = keys_table[key].eq(path_key); //panics when key is not in index -> need a work around
+
+                    if is_key_there{
+
+                        println!("{}", keys_table);
+                        println!("{}", path_key);
+
+                    } 
 
                 }
-                
+
             }
+            
 
         }
 
+        }
+    }
         

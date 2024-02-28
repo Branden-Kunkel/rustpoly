@@ -19,7 +19,7 @@ fn test_param_handles(){
     prog_dir.push("src/program_files/file_paths.toml");
 
     let file_paths_table = parameter_handles::create_toml_table(prog_dir);
-    parameter_handles::get_file_paths(file_paths_table, "api_files", "settings");
+    parameter_handles::get_file_paths(file_paths_table, "program_files", "keys");
 
 }
 
